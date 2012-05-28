@@ -1,3 +1,3 @@
-SR.Views.Home = Backbone.View.extend({
-	el: $('#home')
+SmugRocket.Views.Home = Backbone.View.extend({
+  el: $('#home')
 });
