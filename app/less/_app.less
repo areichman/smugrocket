@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+	overflow-x: hidden;
+	}
+html {
+	height: 100%;
+	}
+body {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	}
+	
+.page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	
+	.header {
+		background: white;
+		}
+	.content {
+		position: absolute;
+		top: 51px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		-webkit-overflow-scrolling: touch;
+		background: white;
+		}
+	}
+
+.page.transition {
+	-webkit-transition: -webkit-transform 350ms ease-in-out;
+	transition: transform 350ms ease-in-out;
+	}
+	
+/* enable hardware acceleration by using translate3d on page transitions */
+.stage-center {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	z-index: 2;
+	}
+.stage-left {
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	z-index: 1;
+	}
+.stage-right {
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	z-index: 1;
+	}
+	
