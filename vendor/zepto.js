@@ -1,5 +1,5 @@
 /* Zepto v1.0rc1 - polyfill zepto event detect fx ajax form touch - zeptojs.com/license */
-;(function(undefined){
+(function(undefined){
   if (String.prototype.trim === undefined) // fix for iOS 3.2
     String.prototype.trim = function(){ return this.replace(/^\s+/, '').replace(/\s+$/, '') }
 
@@ -30,7 +30,7 @@
       return accumulator
     }
 
-})()
+})();
 var Zepto = (function() {
   var undefined, key, $, classList, emptyArray = [], slice = emptyArray.slice,
     document = window.document,
@@ -1352,4 +1352,4 @@ window.Zepto = Zepto
   ;['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown', 'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function(m){
     $.fn[m] = function(callback){ return this.bind(m, callback) }
   })
-})(Zepto)
+})(Zepto);
