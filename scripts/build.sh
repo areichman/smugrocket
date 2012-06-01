@@ -7,7 +7,7 @@ cd $DIR/..
 
 # Concatentate all of the js files into a single file
 #
-for file in vendor/zepto.js vendor/underscore.js vendor/backbone.js vendor/sha1.js vendor/base64.js app/app.js app/router.js app/*/*.js
+for file in vendor/zepto.js vendor/underscore.js vendor/backbone.js vendor/sha1.js app/app.js app/router.js app/*/*.js
 do
   cat $file >> tmp.app.js
 done
