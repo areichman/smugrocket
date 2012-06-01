@@ -4,6 +4,7 @@ var SmugRocket = {
   Collections: {},
   Views:       {},
   Templates:   {},
+  Lib:         {},
   
   initialize: function() {
     new SmugRocket.Router();
