@@ -2,16 +2,11 @@ SmugRocket.Router = Backbone.Router.extend({
   routes: {
     '':             'home',
     '!/':           'home',
-    '!/categories': 'showCategories'
-	},
-	
-  home: function() {
-    var view = new SmugRocket.Views.Home();
-    SmugRocket.transition(view);
+    '!/login':      'login'
   },
   
-  showCategories: function() {
-    var view = new SmugRocket.Views.Categories();
+  login: function() {
+    var view = new SmugRocket.Views.Login;
     SmugRocket.transition(view);
   }
 });
