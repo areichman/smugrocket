@@ -5,7 +5,8 @@ SmugRocket.Views.Home = Backbone.View.extend({
   // Otherwise, show the various options available in the app.
   //
   render: function() {
-    var template = !localStorage.oauth ? SmugRocket.Templates.connect() : SmugRocket.Templates.home();
+    //var template = !localStorage.oauth ? SmugRocket.Templates.connect() : SmugRocket.Templates.home();
+    var template = SmugRocket.Templates.home();
     this.$el.html(template);
     return this;
   },

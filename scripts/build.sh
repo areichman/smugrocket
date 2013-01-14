@@ -7,14 +7,14 @@ cd $DIR/..
 
 # Concatentate all of the js files into a single file
 #
-for file in vendor/zepto.js vendor/underscore.js vendor/backbone.js vendor/OAuthSimple.js app/app.js app/router.js app/*/*.js
+for file in app/app.js app/router.js app/*/*.js
 do
   cat $file >> tmp.app.js
 done
 
 # Compile the js templates
 #
-for file in app/templates/*/*.jst
+for file in app/templates/*.jst
 do
   basename=`basename $file .jst`
   echo "SmugRocket.Templates.$basename = " >> tmp.app.js
