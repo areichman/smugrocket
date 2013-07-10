@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -14,15 +20,39 @@ body {
 	position: relative;
 	}
 	
+header {
+  height: 44px;
+  padding: 0 10px;
+  border-bottom: 1px solid #808080;
+  color: white;
+  background: #a4b357;
+  background: -moz-linear-gradient(top, #a4b357 0%, #75890c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a4b357), color-stop(100%,#75890c));
+  background: -webkit-linear-gradient(top, #a4b357 0%,#75890c 100%);
+  background: -o-linear-gradient(top, #a4b357 0%,#75890c 100%);
+  background: -ms-linear-gradient(top, #a4b357 0%,#75890c 100%);
+  background: linear-gradient(to bottom, #a4b357 0%,#75890c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c',GradientType=0 );
+  
+  h1 {
+    margin:  0;
+    padding: 0;
+    line-height: 44px;
+    font-size: 24px;
+    }
+  }
+	
 .page {
 	position: absolute;
-	top: 45px;
+	top: 44px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
+	padding: 15px 10px;
 	-webkit-overflow-scrolling: touch;
 	background: #fafafa;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 	}
 
 .page.transition {
